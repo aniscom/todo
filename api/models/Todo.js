@@ -9,6 +9,8 @@ module.exports = {
   attributes: {
     value: {
       'type': 'text'
+      minLength: 1
+
     }
   }
 };

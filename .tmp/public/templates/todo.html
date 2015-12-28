@@ -19,11 +19,9 @@
         <div class="col-sm-4 col-sm-offset-4">
             <h4> Click on the todo to <strong> Delete </strong></h4>
             <div class="checkbox" ng-repeat="todo in todos">
+                <img src="https://cdn1.iconfinder.com/data/icons/linecon/512/cross-32.png" ng-click="removeTodo(todo)">
                 <div class="alert alert-dismissible alert-success">
-                    <h4 ng-click="removeTodo(todo)">
-                        {{formData.value}}
-                        {{ todo.value }}
-                    </h4>
+                    {{ todo.value }}
                 </div>
             </div>
         </div>
