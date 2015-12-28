@@ -30,7 +30,7 @@ todoApp.controller('TodoCtrl', ['$scope', '$rootScope', 'todoService', function(
         if (isValid) {
             alert('our form is amazing');
         }
-
+    }
 
     todoService.getTodos()
         .then(function(response) {
