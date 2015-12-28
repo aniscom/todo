@@ -9,7 +9,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus required>
                         <br>
-                        <button type="submit" class="btn btn-primary btn-lg" ng-click="addTodo()">Add me and don't forget me</button>
+                        <button type="submit" class="btn btn-success btn-lg" ng-click="addTodo()">Add me and don't forget me</button>
                     </div>
                 </form>
             </div>
@@ -19,7 +19,7 @@
         <div class="col-sm-4 col-sm-offset-4">
             <h4> Click on the todo to <strong> Delete </strong></h4>
             <div class="checkbox" ng-repeat="todo in todos">
-                <div class="alert alert-dismissible alert-warning">
+                <div class="alert alert-dismissible alert-success">
                 <label>
                     <h3 ng-click="removeTodo(todo)">
                     {{ todo.value }}
