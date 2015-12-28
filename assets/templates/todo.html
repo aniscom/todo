@@ -5,11 +5,12 @@
         <br>
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <form>
-                    <div class="form-group">
+                <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+                    <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
                         <input type="text" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus>
+                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
                         <br>
-                        <button type="submit" class="btn btn-success btn-lg" ng-click="addTodo()">Add me and don't forget me</button>
+                        <button type="submit" class="btn btn-success btn-lg" ng-disabled="userForm.$invalid" ng-click="addTodo()">Add me and don't forget me</button>
                     </div>
                 </form>
             </div>
