@@ -1,0 +1,11 @@
+{
+  "name": "todoApp",
+  "homepage": "https://github.com/aniscom/todo",
+  "authors": [
+    "aniscom <a.elloumi92@gmail.com>"
+  ],
+  "description": "appangsailstodo",
+  "main": "app.js",
+  "moduleType": [],
+  "license": "MIT"
+}
