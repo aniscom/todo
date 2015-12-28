@@ -1,0 +1,54 @@
+{
+  "data": {
+    "todo": [
+      {
+        "value": null,
+        "createdAt": "2015-12-28T16:38:24.248Z",
+        "updatedAt": "2015-12-28T16:38:24.248Z",
+        "id": 18
+      },
+      {
+        "value": null,
+        "createdAt": "2015-12-28T16:38:27.891Z",
+        "updatedAt": "2015-12-28T16:38:27.891Z",
+        "id": 19
+      },
+      {
+        "value": null,
+        "createdAt": "2015-12-28T16:40:08.871Z",
+        "updatedAt": "2015-12-28T16:40:08.871Z",
+        "id": 20
+      },
+      {
+        "value": "ea",
+        "createdAt": "2015-12-28T16:44:31.745Z",
+        "updatedAt": "2015-12-28T16:44:31.745Z",
+        "id": 25
+      }
+    ]
+  },
+  "schema": {
+    "todo": {
+      "value": {
+        "type": "text"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "todo": {
+      "id": 25
+    }
+  }
+}

@@ -28,8 +28,16 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
+/*  localDiskDb: {
     adapter: 'sails-disk'
+  },*/
+  mongo: {
+    adapter: 'sails-mongo',
+    host: 'localhost',
+    port: 27017,
+    //user: 'user',
+    //password: "password",
+    database: 'tododb'
   }
 
 
