@@ -8,7 +8,7 @@
 module.exports = {
   attributes: {
     value: {
-      'type': 'text'
+      'type': 'text',
       minLength: 1
 
     }
