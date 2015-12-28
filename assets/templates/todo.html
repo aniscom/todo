@@ -18,12 +18,12 @@
     <div id="todo-list" class="row">
         <div class="col-sm-4 col-sm-offset-4">
             <div class="checkbox" ng-repeat="todo in todos">
-                <div class="alert alert-dismissible alert-success">
+                <div class="alert alert-dismissible alert-info">
                 <label>
-                    <h4> Click on the todo to <strong> Delete </strong></h4>
-                    <h2 ng-click="removeTodo(todo)">
+                    <h2> Click on the todo to <strong> Delete </strong></h2>
+                    <h4 ng-click="removeTodo(todo)">
                     {{ todo.value }}
-                    </h2>
+                    </h4>
                 </label>
                 </div>
             </div>
