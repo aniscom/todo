@@ -8,7 +8,8 @@ var todoApp = angular.module('todoApp', ['ngRoute', 'ui.bootstrap'])
 // our routes
 todoApp.config(['$routeProvider',
     function($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider
+            .when('/', {
             templateUrl: '/templates/todo.html',
             controller: 'TodoCtrl'
         }).otherwise({
