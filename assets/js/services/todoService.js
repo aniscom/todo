@@ -18,6 +18,7 @@ todoApp.service('todoService', function($http, $q) {
         },
 
 
+
         // add a note
         'addTodo': function(todo) {
             console.log(todo);

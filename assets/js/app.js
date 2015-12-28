@@ -18,6 +18,7 @@ todoApp.config(['$routeProvider',
     }])
 
 // our controllers
+
 todoApp.controller('TodoCtrl', ['$scope', '$rootScope', 'todoService', function($scope, $rootScope, todoService) {
     $scope.formData = {};
     $scope.todos = [];
