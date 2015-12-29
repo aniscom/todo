@@ -24,14 +24,6 @@ todoApp.controller('TodoCtrl', ['$scope', '$rootScope', 'todoService', function(
     $scope.formData = {};
     $scope.todos = [];
 
-    $scope.submitForm = function(isValid) {
-
-        // check to make sure the form is completely valid
-        if (isValid) {
-            alert('our form is amazing');
-        }
-    }
-
     todoService.getTodos()
         .then(function(response) {
         console.log(response);
