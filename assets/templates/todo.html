@@ -6,9 +6,11 @@
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
                 <form name="userForm" novalidate>
-                    <div class="form-group" ng-class="{ 'has-error' : userForm.formData = null}">
-                        <input type="text"  name="todotext" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus>
-                        <p ng-show="userForm.formData = null" class="help-block"> Required.</p>
+                    <div class="form-group">
+                        <input type="text"  name="formData.value" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus>
+                        <span style="color:red" ng-show="userForm.formData.$dirty && userForm.formData.$invalid">
+                        <span ng-show="userForm.formData.$error.required">note is required.</span>
+                        </span>
                         <br>
                         <button type="submit" class="btn btn-success btn-lg" ng-disabled="userForm.formData = null" ng-click="addTodo()">Add me but don't forget me</button>
                     </div>
