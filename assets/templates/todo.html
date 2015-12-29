@@ -8,7 +8,7 @@
                 <form name="userForm" novalidate>
                     <div class="form-group" ng-class="{ 'has-error' : userForm.todotext.$invalid && !userForm.todotext.$pristine }">
                         <input type="text"  name="todotext" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus>
-                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+                        <p ng-show="userForm.todotext.$invalid && !userForm.todotext.$pristine" class="help-block">You name is required.</p>
                         <br>
                         <button type="submit" class="btn btn-success btn-lg" ng-disabled="userForm.todotext.$invalid && !userForm.todotext.$pristine" ng-click="addTodo()">Add me but don't forget me</button>
                     </div>
