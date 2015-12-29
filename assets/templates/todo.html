@@ -7,12 +7,9 @@
             <div class="col-sm-8 col-sm-offset-2 text-center">
                 <form name="userForm" novalidate>
                     <div class="form-group">
-                        <input type="text"  name="formData" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData" autofocus>
-                        <span style="color:red" ng-show="userForm.formData.$dirty && userForm.formData.$invalid">
-                        <span ng-show="userForm.formData.$error.required">note is required.</span>
-                        </span>
+                        <input type="text"  name="formData" class="form-control input-lg text-center" placeholder="Add Todo!" ng-model="formData.value" autofocus>
                         <br>
-                        <button type="submit" class="btn btn-success btn-lg" ng-disabled="userForm.formData.$dirty " ng-click="addTodo()">Add me but don't forget me</button>
+                        <button type="submit" class="btn btn-success btn-lg" ng-click="addTodo()">Add me but don't forget me</button>
                     </div>
                 </form>
             </div>

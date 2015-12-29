@@ -21,7 +21,7 @@ todoApp.config(['$routeProvider',
 // our controllers
 
 todoApp.controller('TodoCtrl', ['$scope', '$rootScope', 'todoService', function($scope, $rootScope, todoService) {
-    $scope.formData = 'this is a random note';
+    $scope.formData = {};
     $scope.todos = [];
 
     todoService.getTodos()
@@ -36,7 +36,7 @@ todoApp.controller('TodoCtrl', ['$scope', '$rootScope', 'todoService', function(
             .then(function(response) {
             console.log(response);
             $scope.todos.push($scope.formData)
-            $scope.formData = "";
+            $scope.formData = {};
         })
     }
 
